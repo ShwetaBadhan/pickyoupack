@@ -32,7 +32,7 @@
     <p>Join 3,000+ brands who trust PickYourPack for bulk packaging that never lets them down.</p>
     <div class="cta-cluster">
       <a href="#quote" class="btn-gold">Get a Free Quote</a>
-      <a href="tel:+919999608930" class="btn-ghost"><img src="{{ url('assets/imgs/phone-call.png') }}" alt=""> Call:+91 9999608930</a>
+      <a href="tel:+919999608930" class="btn-ghost"><img src="{{ url('assets/imgs/phone-call.png') }}" alt=""> Call:+91 9958116766, 9999608930</a>
       <a href="https://wa.me/919999608930" class="btn-ghost"><img src="{{ url ('assets/imgs/whatsapp.png')}}" alt=""> WhatsApp Us</a>
     </div>
   </div>

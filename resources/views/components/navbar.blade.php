@@ -10,7 +10,8 @@
       <li><a href="#testimonials">Testimonials</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="https://maps.app.goo.gl/37LaTYNYDcAoZRaG8" target="_blank">Location</a></li>
     </ul>
-    <a href="#quote" class="nav-cta">Get Bulk Quote</a>
+    <a href="#quote" class="nav-cta">Download Catalogue</a>
   </div>
 </nav>

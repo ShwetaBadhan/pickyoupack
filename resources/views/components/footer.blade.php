@@ -7,7 +7,7 @@
       </div>
       <p class="footer-desc">India's premier bulk packaging partner for eCommerce sellers, D2C brands, and growing businesses. Quality packaging, fast dispatch, PAN India delivery.</p>
       <div class="footer-contact">
-        <img src="{{ url('assets/imgs/phone-call.png') }}" alt=""> <a href="tel:+919999608930">+91 9999608930</a><br>
+        <img src="{{ url('assets/imgs/phone-call.png') }}" alt=""> <a href="tel:+919999608930">+91 9958116766, 9999608930</a><br>
         <img src="{{ url('assets/imgs/email.png') }}" alt=""> <a href="mailto:sales@pickyourpack.in ">sales@pickyourpack.in </a><br>
         <img src="{{ url('assets/imgs/location.png') }}" alt=""> Shop no. 80, Metro Pillar no. 539, Main Rohtak Road, Mundka Industrial Area, Delhi.<br>
         
