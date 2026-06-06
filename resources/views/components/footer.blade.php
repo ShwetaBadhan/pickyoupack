@@ -3,7 +3,7 @@
   <div class="footer-grid">
     <div>
       <div class="footer-logo">
-          <img src="{{url ('assets/imgs/logo.png')}}" alt="logo" style="width: 160px;">
+          <img src="{{url ('assets/imgs/white-logo.png')}}" alt="logo" style="width: 160px;">
       </div>
       <p class="footer-desc">India's premier bulk packaging partner for eCommerce sellers, D2C brands, and growing businesses. Quality packaging, fast dispatch, PAN India delivery.</p>
       <div class="footer-contact">

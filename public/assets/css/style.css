@@ -459,7 +459,7 @@
     transform: translateY(-2px);
   }
   .prod-card-img {
-    height: 180px; 
+    /* height: 180px;  */
     display: flex; 
     align-items: center; 
     justify-content: center;
@@ -470,8 +470,8 @@
   }
   .prod-card-img img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    /* height: 100%; */
+    /* object-fit: cover; */
     transition: transform 0.3s ease;
   }
   .prod-card:hover .prod-card-img img {
@@ -767,49 +767,161 @@
   }
 
   /* TESTIMONIALS - Simple Cards */
-  .testimonials-section { background: var(--gray-100); }
-  .testimonials-grid { 
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 1.5rem;
-    margin-top: 2rem;
-  }
-  .testi-card { 
-    border-radius: 4px; 
-    padding: 1.5rem; 
-    background: var(--white);
-    box-shadow: var(--shadow-sm);
-    transition: box-shadow 0.2s ease;
-  }
-  .testi-card:hover {
-    box-shadow: var(--shadow-md);
-  }
-  .testi-stars { 
-    color: #ffc107; 
-    font-size: 1rem; 
-    margin-bottom: 0.75rem; 
-    letter-spacing: 0.1rem;
-  }
-  .testi-text { 
-    font-size: 0.95rem; 
-    color: var(--gray-800); 
-    margin-bottom: 1rem; 
-    font-style: italic;
-  }
-  .testi-author { 
-    border-top: 1px solid var(--border-color);
-    padding-top: 0.75rem;
-  }
-  .testi-name { 
-    font-weight: 700; 
-    font-size: 0.9rem;
-    font-family: 'Merriweather', serif;
-  }
-  .testi-biz { 
-    font-size: 0.8rem; 
-    color: var(--gray-400); 
-  }
+.testimonials-section { background: var(--gray-100); }
+.testimonials-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.testi-card { 
+  border-radius: 4px; 
+  padding: 1.5rem; 
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s ease;
+}
+.testi-card:hover {
+  box-shadow: var(--shadow-md);
+}
+.testi-stars { 
+  color: #ffc107; 
+  font-size: 1rem; 
+  margin-bottom: 0.75rem; 
+  letter-spacing: 0.1rem;
+}
+.testi-text { 
+  font-size: 0.95rem; 
+  color: var(--gray-800); 
+  margin-bottom: 1rem; 
+  font-style: italic;
+}
+.testi-author { 
+  border-top: 1px solid var(--border-color);
+  padding-top: 0.75rem;
+}
+.testi-name { 
+  font-weight: 700; 
+  font-size: 0.9rem;
+  font-family: 'Merriweather', serif;
+}
+.testi-biz { 
+  font-size: 0.8rem; 
+  color: var(--gray-400); 
+}
 
+/* Google Reviews Badge - Horizontal Wide */
+.google-reviews-badge-wrapper {
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+.google-reviews-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: var(--white);
+  padding: 1.25rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-color);
+  width: 100%;
+  justify-content: center;
+}
+
+.review-stars {
+  color: #ffc107;
+  font-size: 1.2rem;
+  letter-spacing: 0.15rem;
+  flex-shrink: 0;
+}
+
+.review-rating {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  flex-shrink: 0;
+}
+
+.rating-score {
+  font-weight: 700;
+  color: var(--gray-900);
+  font-size: 1.25rem;
+}
+
+.rating-total {
+  color: var(--gray-600);
+  font-size: 0.95rem;
+}
+
+.review-divider {
+  color: var(--gray-300);
+  font-size: 1.1rem;
+  font-weight: 300;
+  flex-shrink: 0;
+}
+
+.review-count {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  flex-shrink: 0;
+}
+
+.count-number {
+  font-weight: 700;
+  color: var(--gray-900);
+  font-size: 1.1rem;
+}
+
+.count-label {
+  color: var(--gray-600);
+  font-size: 0.95rem;
+}
+
+.powered-by {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--gray-500);
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+.google-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .google-reviews-badge-wrapper {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  
+  .google-reviews-badge {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 1.25rem 1.5rem;
+    justify-content: center;
+  }
+  
+  .review-stars {
+    font-size: 1rem;
+  }
+  
+  .rating-score {
+    font-size: 1.1rem;
+  }
+  
+  .review-divider {
+    display: none;
+  }
+}
   /* FAQ - Simple Accordion */
   .faq-section { background: var(--white); }
   .faq-grid { 
@@ -1105,3 +1217,148 @@
     .btn-gold, .btn-ghost { width: 100%; max-width: 280px; }
     .client-logo { width: 100px; height: 50px; font-size: 0.75rem; }
   }
+
+  /* Partners Section */
+.partners-section {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+/* Partners Grid */
+.partners-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.partner-card {
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  min-width: 150px;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.partner-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.partner-logo-img {
+  max-width: 120px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.fpo {
+  color: #000;
+  font-family: Arial, sans-serif;
+  border: 3px solid #000;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+
+.snabbit {
+  color: #ff6b6b;
+  font-family: Arial, sans-serif;
+}
+
+.trackon {
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Solutions Section */
+.solutions-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.solutions-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0066cc;
+  margin-bottom: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.solutions-description {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+  
+  .partners-grid {
+    gap: 1rem;
+  }
+  
+  .partner-card {
+    padding: 1rem 1.5rem;
+    min-width: 120px;
+  }
+  
+  .partner-logo {
+    font-size: 1.2rem;
+    height: 40px;
+  }
+  
+  .solutions-title {
+    font-size: 1.5rem;
+  }
+  
+  .solutions-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .partners-section {
+    padding: 2rem 0;
+  }
+  
+  .partner-card {
+    min-width: 100px;
+    padding: 0.75rem 1rem;
+  }
+  
+  .partner-logo {
+    font-size: 1rem;
+  }
+}

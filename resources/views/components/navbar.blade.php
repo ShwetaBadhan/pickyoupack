@@ -12,6 +12,6 @@
       <li><a href="#contact">Contact</a></li>
       <li><a href="https://maps.app.goo.gl/37LaTYNYDcAoZRaG8" target="_blank">Location</a></li>
     </ul>
-    <a href="#quote" class="nav-cta">Download Catalogue</a>
+    <a href="{{ url('assets/pdf/catalogue.pdf') }}" target="_blank" class="nav-cta">Download Catalogue</a>
   </div>
 </nav>

@@ -6,6 +6,7 @@
 @include('components.home.ticker')
 @include('components.home.clients')
 @include('components.home.branded-collections')
+@include('components.home.trusted')
 @include('components.home.stats')
 @include('components.home.products')
 @include('components.home.why-us')
