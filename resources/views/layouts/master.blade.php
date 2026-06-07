@@ -29,71 +29,128 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <!-- Main JS -->
     <script src="assets/js/main.js" ></script>
-  <script>
+<script>
 document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM loaded successfully'); // Debug
+  
   const form = document.getElementById('quoteForm');
   const submitBtn = document.getElementById('submitBtn');
+  const btnText = submitBtn?.querySelector('.btn-text');
+  const spinner = submitBtn?.querySelector('.spinner');
   
   if (!form) {
-    console.error('Form not found!');
+    console.error('❌ Form not found!');
     return;
+  }
+  
+  if (typeof Swal === 'undefined') {
+    console.error('❌ SweetAlert2 not loaded!');
+  } else {
+    console.log('✅ SweetAlert2 loaded');
   }
 
   form.addEventListener('submit', function(e) {
     e.preventDefault();
     
-    console.log('Form submitted!'); // Debug log
+    console.log('🚀 Form submitted!');
+    
+    // Disable button and show spinner
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      if (btnText) btnText.classList.add('d-none');
+      if (spinner) spinner.classList.remove('d-none');
+    }
     
     const formData = new FormData(form);
     const url = '{{ route("quote.submit") }}';
     
-    console.log('Submitting to:', url); // Debug log
+    console.log('📤 Submitting to:', url);
+    console.log('📋 Form data:', Object.fromEntries(formData));
 
     fetch(url, {
       method: 'POST',
       body: formData,
       headers: {
-        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]')?.getAttribute('content') || '{{ csrf_token() }}',
         'Accept': 'application/json',
         'X-Requested-With': 'XMLHttpRequest'
       }
     })
     .then(async response => {
-      console.log('Response status:', response.status); // Debug log
+      console.log('📥 Response status:', response.status);
       
-      const data = await response.json();
-      console.log('Response data:', data); // Debug log
+      const text = await response.text();
+      console.log('📄 Raw response:', text);
       
-      return { response, data };
+      try {
+        const data = JSON.parse(text);
+        console.log('✅ Parsed data:', data);
+        return { response, data };
+      } catch (e) {
+        console.error('❌ JSON parse error:', e);
+        throw new Error('Invalid JSON response');
+      }
     })
     .then(({ response, data }) => {
+      // Reset button
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        if (btnText) btnText.classList.remove('d-none');
+        if (spinner) spinner.classList.add('d-none');
+      }
+
       if (data.success) {
-        Swal.fire({
-          icon: 'success',
-          title: 'Success!',
-          text: data.message,
-          confirmButtonColor: '#d4a017',
-          timer: 3000
-        });
+        console.log('✅ Success!');
+        
+        if (typeof Swal !== 'undefined') {
+          Swal.fire({
+            icon: 'success',
+            title: 'Success!',
+            text: data.message || 'Quote request submitted successfully!',
+            confirmButtonColor: '#d4a017',
+            timer: 3000,
+            timerProgressBar: true
+          });
+        } else {
+          alert(data.message || 'Success!');
+        }
+        
         form.reset();
       } else {
-        Swal.fire({
-          icon: 'error',
-          title: 'Error!',
-          text: data.message || 'Something went wrong',
-          confirmButtonColor: '#d4a017'
-        });
+        console.log('❌ Error:', data.message);
+        
+        if (typeof Swal !== 'undefined') {
+          Swal.fire({
+            icon: 'error',
+            title: 'Error!',
+            text: data.message || 'Something went wrong',
+            confirmButtonColor: '#d4a017'
+          });
+        } else {
+          alert(data.message || 'Error!');
+        }
       }
     })
     .catch(error => {
-      console.error('Fetch error:', error); // Debug log
+      console.error('❌ Fetch error:', error);
       
-      Swal.fire({
-        icon: 'error',
-        title: 'Network Error!',
-        text: 'Please check console for details',
-        confirmButtonColor: '#d4a017'
-      });
+      // Reset button
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        if (btnText) btnText.classList.remove('d-none');
+        if (spinner) spinner.classList.add('d-none');
+      }
+      
+      if (typeof Swal !== 'undefined') {
+        Swal.fire({
+          icon: 'error',
+          title: 'Network Error!',
+          text: error.message || 'Please check console for details',
+          confirmButtonColor: '#d4a017'
+        });
+      } else {
+        alert('Error: ' + error.message);
+      }
     });
   });
 });

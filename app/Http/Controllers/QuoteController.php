@@ -4,20 +4,19 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\QuoteRequest;
+use App\Mail\QuoteRequestMail;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class QuoteController extends Controller
 {
     public function store(Request $request)
     {
-        // Step 1: Log raw request data
         Log::info('=== QUOTE FORM SUBMITTED ===');
         Log::info('Request Data:', $request->all());
-        Log::info('Request Method: ' . $request->method());
-        Log::info('Request URL: ' . $request->url());
 
         try {
-            // Step 2: Validate
+            // Validate
             $validated = $request->validate([
                 'name' => 'required|string|max:255',
                 'phone' => 'required|string|min:10|max:15',
@@ -27,15 +26,23 @@ class QuoteController extends Controller
 
             Log::info('Validation Passed:', $validated);
 
-            // Step 3: Save to database (uncomment after creating model)
-            // QuoteRequest::create($validated);
-            // Log::info('Data saved to database');
+            // Save to database
+            $quote = QuoteRequest::create([
+                'name' => $validated['name'],
+                'phone' => $validated['phone'],
+                'product' => $validated['product'],
+                'quantity' => $validated['quantity'],
+            ]);
 
-            // Step 4: Return success response
+            Log::info('Quote saved to database with ID: ' . $quote->id);
+
+            // Send email
+            $this->sendQuoteEmail($validated);
+
             return response()->json([
                 'success' => true,
-                'message' => 'Quote request submitted successfully!',
-                'data' => $validated // For debugging
+                'message' => 'Quote request submitted successfully! Our team will contact you shortly.',
+                'quote_id' => $quote->id
             ]);
 
         } catch (\Illuminate\Validation\ValidationException $e) {
@@ -43,7 +50,7 @@ class QuoteController extends Controller
             
             return response()->json([
                 'success' => false,
-                'message' => 'Validation failed',
+                'message' => 'Please check your input and try again.',
                 'errors' => $e->errors()
             ], 422);
 
@@ -53,8 +60,39 @@ class QuoteController extends Controller
             
             return response()->json([
                 'success' => false,
-                'message' => 'Error: ' . $e->getMessage()
+                'message' => 'Failed to submit quote. Please try again later.',
+                'error' => config('app.debug') ? $e->getMessage() : null
             ], 500);
         }
     }
+
+    /**
+     * Send quote email
+     */
+  private function sendQuoteEmail($data)
+{
+    try {
+        Log::info('=== STARTING EMAIL SEND ===');
+        
+        // Get emails directly from .env
+        $mainEmail = env('MAIL_FROM_ADDRESS');
+        $ccEmail = env('MAIL_CC_ADDRESS');
+        
+        Log::info('Main Email: ' . $mainEmail);
+        Log::info('CC Email: ' . $ccEmail);
+        
+        // Send email
+        Mail::to($mainEmail)
+            ->cc($ccEmail)
+            ->send(new QuoteRequestMail($data));
+
+        Log::info('✅ Email sent successfully!');
+        
+        return true;
+
+    } catch (\Exception $e) {
+        Log::error('❌ EMAIL SEND FAILED: ' . $e->getMessage());
+        throw $e;
+    }
+}
 }

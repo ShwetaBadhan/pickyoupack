@@ -16,4 +16,8 @@ class QuoteRequest extends Model
         'quantity',
         'status'
     ];
+
+    protected $attributes = [
+        'status' => 'pending'
+    ];
 }

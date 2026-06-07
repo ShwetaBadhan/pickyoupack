@@ -38,8 +38,8 @@
     </div>
     <div class="footer-col">
       <h4>Reach Us</h4>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d1770893.8763987846!2d74.7809966!3d29.8995226!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x391964aa569e7355%3A0x8fbd263103a38861!2sPunjab!3m2!1d31.1471305!2d75.34121789999999!4m5!1s0x390d028a70f5c7a5%3A0x2f536b3fe9f19daf!2sBrand%20Godam%2C%20Metro%20Pillar%20573%2C%20Gf-64%2F4%2F2%2C%20Near%2C%20Main%20Rohtak%20Rd%2C%20Mundka%2C%20Delhi%20110041!3m2!1d28.683821!2d77.01564239999999!5e0!3m2!1sen!2sin!4v1780838744627!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3500.235238415075!2d77.02259507550264!3d28.68260897563745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDQwJzU3LjQiTiA3N8KwMDEnMzAuNiJF!5e0!3m2!1sen!2sin!4v1780842976486!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
   </div>
   <div class="footer-bottom">
     <span>© 2025 PickYourPack. All rights reserved.</span>
@@ -52,6 +52,6 @@
   </div>
 </footer>
 <!-- CHAT WIDGET PLACEHOLDER -->
-<div class="chat-widget" onclick="alert('Chat feature would connect to your support system.')">
-  <img src="whatsapp.png" alt=""> Chat With Us
+<div class="chat-widget" onclick="window.open('https://wa.me/919958116766', '_blank')" style="cursor: pointer;">
+   Chat With Us
 </div>

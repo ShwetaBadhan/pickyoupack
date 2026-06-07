@@ -42,7 +42,7 @@
                   </table>
                 </div>
                 <div class="prod-tags">
-                  <a href="#quote" class="prod-tag btn-whatsapp" target="_blank">
+                  <a href="https://wa.me/919958116766" class="prod-tag btn-whatsapp" target="_blank">
                     <span class="btn-icon"><img src="whatsapp.png" alt=""></span> WhatsApp
                   </a>
                   <a href="#quote" class="prod-tag btn-enquiry">
@@ -75,7 +75,7 @@
                   </table>
                 </div>
                 <div class="prod-tags">
-                  <a href="#quote" class="prod-tag btn-whatsapp" target="_blank">
+                  <a href="https://wa.me/919958116766" class="prod-tag btn-whatsapp" target="_blank">
                     <span class="btn-icon"><img src="whatsapp.png" alt=""></span> WhatsApp
                   </a>
                   <a href="#quote" class="prod-tag btn-enquiry">
@@ -103,7 +103,7 @@
                   </table>
                 </div>
                 <div class="prod-tags">
-                  <a href="#quote" class="prod-tag btn-whatsapp" target="_blank">
+                  <a href="https://wa.me/919958116766" class="prod-tag btn-whatsapp" target="_blank">
                     <span class="btn-icon"><img src="whatsapp.png" alt=""></span> WhatsApp
                   </a>
                   <a href="#quote" class="prod-tag btn-enquiry">
@@ -134,7 +134,7 @@
                   </table>
                 </div>
                 <div class="prod-tags">
-                  <a href="#quote" class="prod-tag btn-whatsapp" target="_blank">
+                  <a href="https://wa.me/919958116766" class="prod-tag btn-whatsapp" target="_blank">
                     <span class="btn-icon"><img src="whatsapp.png" alt=""></span> WhatsApp
                   </a>
                   <a href="#quote" class="prod-tag btn-enquiry">
@@ -165,7 +165,7 @@
                   </table>
                 </div>
                 <div class="prod-tags">
-                  <a href="#quote" class="prod-tag btn-whatsapp" target="_blank">
+                  <a href="https://wa.me/919958116766" class="prod-tag btn-whatsapp" target="_blank">
                     <span class="btn-icon"><img src="whatsapp.png" alt=""></span> WhatsApp
                   </a>
                   <a href="#quote" class="prod-tag btn-enquiry">
@@ -196,7 +196,7 @@
                   </table>
                 </div>
                 <div class="prod-tags">
-                  <a href="#quote" class="prod-tag btn-whatsapp" target="_blank">
+                  <a href="https://wa.me/919958116766" class="prod-tag btn-whatsapp" target="_blank">
                     <span class="btn-icon"><img src="whatsapp.png" alt=""></span> WhatsApp
                   </a>
                   <a href="#quote" class="prod-tag btn-enquiry">
@@ -229,7 +229,7 @@
                   </table>
                 </div>
                 <div class="prod-tags">
-                  <a href="#quote" class="prod-tag btn-whatsapp" target="_blank">
+                  <a href="https://wa.me/919958116766" class="prod-tag btn-whatsapp" target="_blank">
                     <span class="btn-icon"><img src="whatsapp.png" alt=""></span> WhatsApp
                   </a>
                   <a href="#quote" class="prod-tag btn-enquiry">
@@ -260,7 +260,7 @@
                   </table>
                 </div>
                 <div class="prod-tags">
-                  <a href="#quote" class="prod-tag btn-whatsapp" target="_blank">
+                  <a href="https://wa.me/919958116766" class="prod-tag btn-whatsapp" target="_blank">
                     <span class="btn-icon"><img src="whatsapp.png" alt=""></span> WhatsApp
                   </a>
                   <a href="#quote" class="prod-tag btn-enquiry">
@@ -281,7 +281,7 @@
                 <h3>Plastic Sutli</h3>
                 <p>Durable PP twine for bundling and tying. Water, oil, and rot-resistant. Multiple colors available.</p>
                 <div class="prod-tags">
-                  <a href="#quote" class="prod-tag btn-whatsapp" target="_blank">
+                  <a href="https://wa.me/919958116766" class="prod-tag btn-whatsapp" target="_blank">
                     <span class="btn-icon"><img src="whatsapp.png" alt=""></span> WhatsApp
                   </a>
                   <a href="#quote" class="prod-tag btn-enquiry">
@@ -302,7 +302,7 @@
                 <h3>Packaging Labels</h3>
                 <p>Custom printed labels for product identification and branding. Various sizes and materials.</p>
                 <div class="prod-tags">
-                  <a href="#quote" class="prod-tag btn-whatsapp" target="_blank">
+                  <a href="https://wa.me/919958116766" class="prod-tag btn-whatsapp" target="_blank">
                     <span class="btn-icon"><img src="whatsapp.png" alt=""></span> WhatsApp
                   </a>
                   <a href="#quote" class="prod-tag btn-enquiry">
@@ -330,7 +330,7 @@
                 <h3>Plain Poly Courier Bags</h3>
                 <p>Tamper-proof, water-resistant LDPE bags. Perfect for fashion, apparel & documents. Self-sealing adhesive strip.</p>
                 <div class="prod-tags">
-                  <a href="#quote" class="prod-tag btn-whatsapp" target="_blank">
+                  <a href="https://wa.me/919958116766" class="prod-tag btn-whatsapp" target="_blank">
                     <span class="btn-icon"><img src="whatsapp.png" alt=""></span> WhatsApp
                   </a>
                   <a href="#quote" class="prod-tag btn-enquiry">
@@ -351,7 +351,7 @@
                 <h3>POD-NONPOD Courier Bags</h3>
                 <p>Proof of Delivery pouches with external document pockets. Available with and without POD facility.</p>
                 <div class="prod-tags">
-                  <a href="#quote" class="prod-tag btn-whatsapp" target="_blank">
+                  <a href="https://wa.me/919958116766" class="prod-tag btn-whatsapp" target="_blank">
                     <span class="btn-icon"><img src="whatsapp.png" alt=""></span> WhatsApp
                   </a>
                   <a href="#quote" class="prod-tag btn-enquiry">
@@ -372,7 +372,7 @@
                 <h3>Printed Poly Courier Bags</h3>
                 <p>Custom printed bags for Amazon, Flipkart, Meesho. Branded packaging with your logo and designs.</p>
                 <div class="prod-tags">
-                  <a href="#quote" class="prod-tag btn-whatsapp" target="_blank">
+                  <a href="https://wa.me/919958116766" target="_blank" class="prod-tag btn-whatsapp" target="_blank">
                     <span class="btn-icon"><img src="whatsapp.png" alt=""></span> WhatsApp
                   </a>
                   <a href="#quote" class="prod-tag btn-enquiry">
@@ -393,7 +393,7 @@
                 <h3>Plain Paper Bags</h3>
                 <p>Eco-friendly kraft paper courier bags. Biodegradable and sustainable packaging solution.</p>
                 <div class="prod-tags">
-                  <a href="#quote" class="prod-tag btn-whatsapp" target="_blank">
+                  <a href="https://wa.me/919958116766" class="prod-tag btn-whatsapp" target="_blank">
                     <span class="btn-icon"><img src="whatsapp.png" alt=""></span> WhatsApp
                   </a>
                   <a href="#quote" class="prod-tag btn-enquiry">
@@ -414,7 +414,7 @@
                 <h3>Printed Paper Bags</h3>
                 <p>Custom printed paper bags for Myntra and other brands. Premium eco-friendly packaging with branding.</p>
                 <div class="prod-tags">
-                  <a href="#quote" class="prod-tag btn-whatsapp" target="_blank">
+                  <a href="https://wa.me/919958116766" class="prod-tag btn-whatsapp" target="_blank">
                     <span class="btn-icon"><img src="whatsapp.png" alt=""></span> WhatsApp
                   </a>
                   <a href="#quote" class="prod-tag btn-enquiry">
@@ -435,7 +435,7 @@
                 <h3>Thermal Labels</h3>
                 <p>Direct thermal shipping labels for e-commerce. High-quality printing for barcodes and addresses.</p>
                 <div class="prod-tags">
-                  <a href="#quote" class="prod-tag btn-whatsapp" target="_blank">
+                  <a href="https://wa.me/919958116766" class="prod-tag btn-whatsapp" target="_blank">
                     <span class="btn-icon"><img src="whatsapp.png" alt=""></span> WhatsApp
                   </a>
                   <a href="#quote" class="prod-tag btn-enquiry">
@@ -456,7 +456,7 @@
                 <h3>Self Adhesive Tapes</h3>
                 <p>Strong adhesive tapes for sealing courier packages. Easy to use, no water or glue required.</p>
                 <div class="prod-tags">
-                  <a href="#quote" class="prod-tag btn-whatsapp" target="_blank">
+                  <a href="https://wa.me/919958116766" class="prod-tag btn-whatsapp" target="_blank">
                     <span class="btn-icon"><img src="whatsapp.png" alt=""></span> WhatsApp
                   </a>
                   <a href="#quote" class="prod-tag btn-enquiry">
@@ -477,7 +477,7 @@
                 <h3>Printed Tapes</h3>
                 <p>Custom printed BOPP tapes for Amazon, Flipkart, Meesho, Myntra. Handle with Care and branded tapes available.</p>
                 <div class="prod-tags">
-                  <a href="#quote" class="prod-tag btn-whatsapp" target="_blank">
+                  <a href="https://wa.me/919958116766" class="prod-tag btn-whatsapp" target="_blank">
                     <span class="btn-icon"><img src="whatsapp.png" alt=""></span> WhatsApp
                   </a>
                   <a href="#quote" class="prod-tag btn-enquiry">
