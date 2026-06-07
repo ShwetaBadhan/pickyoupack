@@ -91,7 +91,28 @@
     color: var(--accent);
     box-shadow: var(--shadow-md);
   }
+.nav-buttons {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
 
+.nav-btn-secondary { 
+  background: var(--white); 
+  color: var(--accent); 
+  padding: 0.6rem 1.2rem; 
+  border: 2px solid var(--accent);
+  font-size: 0.9rem; 
+  font-weight: 600; 
+  text-decoration: none; 
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.nav-btn-secondary:hover { 
+  background: var(--accent); 
+  color: var(--white);
+}
   /* HERO - Traditional Layout */
   /* HERO WITH BACKGROUND IMAGE */
 .hero {
@@ -1361,4 +1382,48 @@
   .partner-logo {
     font-size: 1rem;
   }
+}
+
+/* Social Media QR Section Styling */
+.social-qr-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.qr-card {
+  background: var(--white, #ffffff);
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%; /* Ensures all cards are same height in a row */
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.qr-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+}
+
+.social-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white, #ffffff);
+}
+
+.social-icon.facebook { background: #1877F2; }
+.social-icon.instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+.social-icon.twitter { background: #000000; }
+.social-icon.linkedin { background: #0A66C2; }
+.social-icon.youtube { 
+  background: #FF0000; 
 }
