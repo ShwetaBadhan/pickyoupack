@@ -1442,3 +1442,34 @@
   opacity: 0.7;
   cursor: not-allowed;
 }
+  /* Social Media Icons - Circular Outlined */
+  .social-icons {
+    display: flex;
+    gap: 12px;
+    margin: 1.2rem 0;
+  }
+  
+  .social-icons a {
+    color: var(--gray-400);
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--gray-600);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: var(--white);
+    border-color: var(--white);
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .social-icons svg {
+    width: 18px;
+    height: 18px;
+  }

@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PickYourPack — Premium Packaging for eCommerce India</title>
+    <link rel="icon" type="image/x-icon" href="assets/imgs/fevicon.png" />
+
 <meta name="description" content="Bulk corrugated boxes, courier bags, polybags, bubble wrap & custom branded packaging. Fast 24-hour dispatch. PAN India delivery.">
 <!-- Bootstrap 5 CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">

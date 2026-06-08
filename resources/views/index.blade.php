@@ -13,7 +13,7 @@
 @include('components.home.video-testimonials')
 @include('components.home.testimonials')
 @include('components.home.faqs')
-@include('components.home.social')
+{{-- @include('components.home.social') --}}
 @include('components.home.cta')
 
 
