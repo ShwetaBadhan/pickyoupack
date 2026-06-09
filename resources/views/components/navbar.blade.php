@@ -14,7 +14,7 @@
     </ul>
     <div class="nav-buttons">
   <a href="{{ url('assets/pdf/catalogue.pdf') }}" target="_blank" class="nav-cta">Download Catalogue</a>
-  <a href="https://maps.app.goo.gl/ASCguNbeuVvJUGKz7" target="_blank" class="nav-btn-secondary">Reach Us</a>
+  <a href="https://maps.app.goo.gl/ASCguNbeuVvJUGKz7" target="_blank" class="nav-cta">Reach Us</a>
 </div>
   </div>
 </nav>

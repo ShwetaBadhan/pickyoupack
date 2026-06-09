@@ -76,7 +76,7 @@
       </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2025 PickYourPack. All rights reserved.</span>
+    <span>© <?php echo date('Y')?> PickYourPack | Developed by <a href="https://thebossmedia.co.in/" target="_blank" style="color:#757575; text-decoration: none;"><span>The Boss Media</span></a></span>
     <div class="trust-badges">
       <span class="trust-badge">✓ GST Registered</span>
       <span class="trust-badge">✓ ISO Certified</span>
